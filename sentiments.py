@@ -14,5 +14,4 @@ class SentimentAnalysis:
     def predict_probability(self,sentences):
         sentences = self.vectorizer.transform(sentences)
         probability = self.model.predict_proba(sentences)
-        return probability
-    
+        return probability    
